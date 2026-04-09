@@ -1,0 +1,102 @@
+.container{
+    display:grid;
+    width:100dvw;
+    background-color: #eeeff1;
+    background-color:yellow;
+    grid-template-columns: min(25%,300px) 1fr;
+    grid-template-rows: 1fr 4fr;
+    height:100dvh;
+}
+.header{
+    box-sizing:border-box;
+    grid-column:2/3;
+    grid-row:1/2;
+    background-color:rgb(255,255,255);
+    box-shadow: 5px 3px 3px gray;
+    z-index:1;
+    display:grid;
+    grid-template-columns:13fr 7fr;
+    grid-template-rows:8fr 12fr;
+
+}
+.searchBox{
+    grid-column:1/2;
+    grid-row:1/2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:clamp(20px, 2dvw, 30px)
+}
+.searchButton{
+    height:3dvh;
+    width:3dvw;
+    border-style:none;
+    background-color:white;
+}
+.searchButton img{
+    height:100%;
+}
+.searchBar{
+    height:4dvh;
+    width:70%;
+    padding:0px;
+}
+#searchItem{
+    width:100%;
+    padding:0px;
+    height:100%;
+    padding-left:10px;
+    box-sizing:border-box;
+    border-radius: 10px;
+    background-color:#e2e8f0;
+    border-style:none;
+}
+.greetingBox{
+    grid-column:1/2;
+    grid-row:2/3;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:clamp(30px,3dvw,60px);
+}
+.profilePicture{
+    height:8dvh;
+    aspect-ratio:1;
+    fill:yellow;
+    stroke-width:4;
+    stroke:black;
+}
+.greetingInnerBox{
+    width:60%;
+    height:8dvh;
+    display:flex;
+    flex-direction:column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.greetingHi{
+    font-size:clamp(10px,2dvh,30px);
+}
+.greetingUsername{
+    font-size:clamp(20px,3.5dvh,50px);
+    flex:1
+}
+.profileBox{
+    grid-column:2/3;
+    grid-row:1/2;
+}
+.interactButtonBox{
+    grid-column:2/3;
+    grid-row:2/3;
+    background-color:green;
+}
+.sidebar{
+    grid-column:1/2;
+    grid-row:1/3;
+    background-color:#1992d4;
+    z-index:1;
+}
+.mainContent{
+    grid-column:2/3;
+    grid-row:2/3;
+    background-color:#e2e8f0;
+}
