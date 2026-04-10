@@ -30,3 +30,9 @@ buttonList2.forEach((element)=>{
         alert(event.target.id)
     })
 })
+const projectButtonList=document.querySelectorAll(".projectCardButtons button")
+projectButtonList.forEach((button)=>{
+    button.addEventListener("click",(event)=>{
+        alert(event.target.value)
+    })
+})

@@ -211,8 +211,69 @@
     background-color:orange;
     border-radius:30px 0px 0px 30px;
 }
+.projectTextBox{
+    display:flex;
+    flex-direction:column;
+    padding-left:20px;
+    padding-top:20px;
+}
+.projectCardHeader{
+    font-size:20px;
+    font-weight:bold;
+}
+.projectCardContents{
+    font-size:20px
+}
+.projectCardButtons{
+    display:flex;
+    flex-direction:row-reverse;
+    box-sizing:border-box;
+    padding:0px 10px;
+}
+.projectCardButtons>button{
+    background-color:rgba(255,255,255,0);
+    border-style:none;
+    height:100%;
+    aspect-ratio:1;
+}
+.projectCardButtons>button:hover{
+    text-decoration: underline;
+}
 .announcementsBox{
-    background-color: green;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:20px
+}
+.announcementsBoxTitle{
+    font-size:3dvh;
+    font-weight:bold;
+}
+.announcementsCard{
+    flex:1;
+    background-color:white;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    padding:20px 15px;
+    border-radius:20px;
+    box-shadow: 1px 1px 2px 1px gray;
+}
+.announcementsTextBox:last-child{
+    border-bottom-style:none;
+}
+.announcementsTextBox{
+    display:flex;
+    flex-direction:column;
+    border-bottom:gray solid 2px;
+    gap:5px;
+    padding-top:5px;
+}
+.announcementsTitle{
+    font-size:15px;
+    font-weight:bold
+}
+.announcementsDescription{
+    font-size:10px
 }
 .trendingBox{
     background-color: lime;
