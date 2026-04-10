@@ -18,3 +18,15 @@ const shareButton=document.querySelector(".shareButton")
 shareButton.addEventListener("click",()=>{
     alert("Share")
 })
+const buttonList1=document.querySelectorAll(".firstList button")
+buttonList1.forEach((element)=>{
+    element.addEventListener("click",(event)=>{
+        alert(event.target.id)
+    })
+})
+const buttonList2=document.querySelectorAll(".secondList button")
+buttonList2.forEach((element)=>{
+    element.addEventListener("click",(event)=>{
+        alert(event.target.id)
+    })
+})
